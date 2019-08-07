@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/md_white_1000"/>
+    <item>
+        <bitmap
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/foto_usuario_default"/>
+    </item>
+    <item android:bottom="96dp">
+        <bitmap
+            android:gravity="bottom|center_horizontal"
+            android:src="@drawable/texto_splash"/>
+    </item>
+</layer-list>

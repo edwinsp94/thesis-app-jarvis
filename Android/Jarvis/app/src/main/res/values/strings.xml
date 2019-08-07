@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Jarvis</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="sexos">
+        <item>Femenino</item>
+        <item>Masculino</item>
+    </string-array>
+
+    <string-array name="tipos_usuarios">
+        <item>Administrador</item>
+        <item>Normal</item>
+        <item>Sin Acceso</item>
+    </string-array>
+
+</resources>

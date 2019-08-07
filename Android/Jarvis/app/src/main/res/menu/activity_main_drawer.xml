@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Cuenta">
+        <menu>
+            <item
+                android:id="@+id/nav_iniciar_sesion"
+                android:icon="@drawable/ic_menu_user_online"
+                android:title="Iniciar Sesión" />
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@drawable/ic_menu_user_offline"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+
+    <item android:title="Conexiones Inalámbricas">
+        <menu>
+            <item
+                android:id="@+id/nav_micofono_externo"
+                android:icon="@drawable/ic_menu_mic_on"
+                android:title="Micrófono Externo" />
+            <item
+                android:id="@+id/nav_dispositivo_arduino"
+                android:icon="@drawable/ic_menu_arduino"
+                android:title="Dispositivo Arduino" />
+        </menu>
+    </item>
+
+    <item android:title="Sistema">
+        <menu>
+            <item
+                android:id="@+id/nav_admnistrar_cuentas"
+                android:icon="@drawable/ic_menu_accounts"
+                android:title="Administrar Cuentas" />
+            <item
+                android:id="@+id/nav_consultar_accesos"
+                android:icon="@drawable/ic_menu_history"
+                android:title="Consultar Accesos" />
+        </menu>
+    </item>
+</menu>

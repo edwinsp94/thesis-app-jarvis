@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/FragmentIdentificacion_constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/FragmentIdentificacion_textView_nombre_usuario"
+        app:layout_constraintEnd_toEndOf="@+id/FragmentIdentificacion_textView_nombre_usuario"
+        app:layout_constraintStart_toStartOf="@+id/FragmentIdentificacion_textView_nombre_usuario"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/FragmentIdentificacion_imageView_foto_usuario"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/foto_usuario_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FragmentIdentificacion_fab_camara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_photo_camera"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/FragmentIdentificacion_imageView_foto_usuario"
+            app:layout_constraintEnd_toEndOf="@+id/FragmentIdentificacion_imageView_foto_usuario" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/FragmentIdentificacion_textView_nombre_usuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:textAlignment="center"
+        android:textColor="@color/md_black_1000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/FragmentIdentificacion_constraintLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FragmentIdentificacion_constraintLayout" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/FragmentIdentificacion_constraintLayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_350"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/FragmentIdentificacion_textView_tiempo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/FragmentIdentificacion_imageButton_grabar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/FragmentIdentificacion_imageButton_grabar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/boton_redondo"
+            android:padding="32dp"
+            android:src="@drawable/ic_mic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/FragmentIdentificacion_imageButton_aceptar"
+            app:layout_constraintStart_toEndOf="@+id/FragmentIdentificacion_imageButton_cancelar"
+            app:layout_constraintTop_toBottomOf="@+id/FragmentIdentificacion_textView_tiempo" />
+
+        <ImageButton
+            android:id="@+id/FragmentIdentificacion_imageButton_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/FragmentIdentificacion_imageButton_grabar"
+            app:layout_constraintEnd_toStartOf="@+id/FragmentIdentificacion_imageButton_grabar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/FragmentIdentificacion_imageButton_grabar" />
+
+        <ImageButton
+            android:id="@+id/FragmentIdentificacion_imageButton_aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/FragmentIdentificacion_imageButton_grabar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/FragmentIdentificacion_imageButton_grabar"
+            app:layout_constraintTop_toTopOf="@+id/FragmentIdentificacion_imageButton_grabar" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

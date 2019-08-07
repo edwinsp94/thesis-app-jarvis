@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/FragmentCuenta_imageView_foto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/foto_usuario_default"
+        app:layout_constraintBottom_toTopOf="@+id/FragmentCuenta_editText_dni"
+        app:layout_constraintEnd_toEndOf="@+id/FragmentCuenta_editText_dni"
+        app:layout_constraintStart_toStartOf="@+id/FragmentCuenta_editText_dni"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/FragmentCuenta_editText_dni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="DNI"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/FragmentCuenta_editText_nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FragmentCuenta_imageView_foto" />
+
+    <EditText
+        android:id="@+id/FragmentCuenta_editText_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombres y Apellidos"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/FragmentCuenta_linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/FragmentCuenta_editText_dni"
+        app:layout_constraintStart_toStartOf="@+id/FragmentCuenta_editText_dni"
+        app:layout_constraintTop_toBottomOf="@+id/FragmentCuenta_editText_dni" />
+
+    <LinearLayout
+        android:id="@+id/FragmentCuenta_linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/FragmentCuenta_linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/FragmentCuenta_editText_nombre"
+        app:layout_constraintStart_toStartOf="@+id/FragmentCuenta_editText_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/FragmentCuenta_editText_nombre">
+
+        <TextView
+            android:id="@+id/FragmentCuenta_textView_sexo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Sexo:" />
+
+        <Spinner
+            android:id="@+id/FragmentCuenta_spinner_sexos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:entries="@array/sexos" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FragmentCuenta_linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/FragmentCuenta_linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/FragmentCuenta_linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/FragmentCuenta_linearLayout">
+
+        <TextView
+            android:id="@+id/FragmentCuenta_textView_tipos_usuarios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Tipo:" />
+
+        <Spinner
+            android:id="@+id/FragmentCuenta_spinner_tipos_usuarios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:entries="@array/tipos_usuarios" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cuenta_menu_accion_guardar"
+        android:title="Guardar"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/cuenta_menu_accion_patron"
+        android:title="Patron de Voz"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/cuenta_menu_accion_comandos"
+        android:title="Comandos de Voz"
+        app:showAsAction="never"/>
+</menu>
